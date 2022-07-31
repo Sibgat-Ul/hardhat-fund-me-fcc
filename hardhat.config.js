@@ -28,6 +28,7 @@ module.exports = {
       url: process.env.RPC_URL,
       accounts: [process.env.PRIVATE_KEY],
       chainId: 4,
+      blockConfirmations: 6
     },
     localhost: {
       url: "http://127.0.0.1:8545/",

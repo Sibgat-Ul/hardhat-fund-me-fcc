@@ -1,8 +1,7 @@
 const { network } = require("hardhat");
 const { developmentChains, DECIMALS, INITIAL_ANSWER } = require("../helper-hardhat-config");
-const hre = require("hardhat");
 
-async function deployFuncPre(hre) {
+module.exports = async ({getNamedAccounts, deployments}) => {
     console.log("Deploy mocks");
     hre.getNamedAccounts();
     hre.deployments;
@@ -23,5 +22,4 @@ async function deployFuncPre(hre) {
     }
 }
 
-module.exports.default = deployFuncPre(hre);
 module.exports.tags = ["all", "mocks"];
